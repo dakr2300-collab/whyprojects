@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WP — студия дизайна</title>
+  <meta name="description" content="Аккуратная сетка, живая типографика и ничего лишнего. Чёрно-белый дизайн без конструкторов.">
+  <link rel="icon" type="image/png" href="img/logo-black.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="page">
+
+    <!-- ===== Хиро-карточка ===== -->
+    <section class="card hero" id="top" aria-label="Презентация">
+
+      <header class="hero-head">
+        <a class="brand" href="#top" aria-label="WP — на главную">
+          <img src="img/logo-white.png" alt="Логотип WP" class="brand-mark">
+        </a>
+
+        <button class="burger" aria-label="Меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" aria-label="Разделы">
+          <a href="#about">О нас</a>
+          <a href="#works">Работы</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+      </header>
+
+      <div class="hero-body">
+
+        <div class="hero-copy">
+
+          <div class="slides" aria-live="polite">
+            <article class="slide active">
+              <h1 class="slide-title">WHYSHV</h1>
+              <p class="slide-text">мои проекты и начинания здесь!</p>
+            </article>
+
+            <article class="slide">
+              <p class="slide-label">Наш метод</p>
+              <h2 class="slide-title">Код</h2>
+              <p class="slide-text">Пишем руками: чистые HTML, CSS и&nbsp;JavaScript. Без конструкторов и&nbsp;лишних зависимостей.</p>
+            </article>
+
+            <article class="slide">
+              <p class="slide-label">Наш результат</p>
+              <h2 class="slide-title">Стиль</h2>
+              <p class="slide-text">Чёрно-белая графика, которая одинаково работает на&nbsp;экране и&nbsp;в&nbsp;печати.</p>
+            </article>
+          </div>
+
+          <a class="more" href="#works">
+            <span class="more-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 12h15M13 6l6 6-6 6"/>
+              </svg>
+            </span>
+            <span class="more-text">Подробнее</span>
+          </a>
+
+        </div>
+
+        <!-- Круг со знаком вместо статуи -->
+        <div class="hero-art" aria-hidden="true">
+          <div class="disc">
+            <div class="disc-circle"></div>
+            <img src="img/logo-black.png" alt="" class="disc-mark" draggable="false">
+          </div>
+          <div class="small-circle"></div>
+        </div>
+
+        <!-- Пагинация слайдера -->
+        <div class="pager">
+          <button class="pager-num is-current" data-slide="0" aria-label="Слайд 1">01</button>
+          <button class="pager-num" data-slide="2" aria-label="Слайд 3">03</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== О нас ===== -->
+    <section class="section" id="about">
+      <div class="section-grid">
+        <h2 class="section-title reveal">О&nbsp;нас</h2>
+        <div class="section-body">
+          <p class="lead reveal">Маленькая студия, которая делает большие карточки: визитки, логотипы, обложки и&nbsp;сайты.</p>
+          <ul class="rules">
+            <li class="reveal">
+              <span class="rule-num">01</span>
+              <div>
+                <h3>Сетка</h3>
+                <p>Строим макет на колонках и ритме, а не на настроении.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="rule-num">02</span>
+              <div>
+                <h3>Контраст</h3>
+                <p>Чёрное — это чёрное, белое — это белое. Без компромиссов.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="rule-num">03</span>
+              <div>
+                <h3>Детали</h3>
+                <p>Полировки не бывает слишком много. Проверено.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Работы ===== -->
+    <section class="section" id="works">
+      <div class="section-grid">
+        <h2 class="section-title reveal">Работы</h2>
+        <div class="section-body">
+          <div class="works-grid">
+
+            <a class="work reveal" href="#top" draggable="false">
+              <span class="work-meta">01</span>
+              <span class="art art-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="work-name">Визитка</span>
+              <span class="work-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+
+            <a class="work reveal" href="#top" draggable="false">
+              <span class="work-meta">02</span>
+              <span class="art art-glyph" aria-hidden="true">WP</span>
+              <span class="work-name">Логотип</span>
+              <span class="work-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+
+            <a class="work reveal" href="#top" draggable="false">
+              <span class="work-meta">03</span>
+              <span class="art art-half" aria-hidden="true"><i></i></span>
+              <span class="work-name">Плакат</span>
+              <span class="work-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+
+            <a class="work reveal" href="#top" draggable="false">
+              <span class="work-meta">04</span>
+              <span class="art art-grid" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+              <span class="work-name">Сетка 2×2</span>
+              <span class="work-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+
+            <a class="work reveal" href="#top" draggable="false">
+              <span class="work-meta">05</span>
+              <span class="art art-disc" aria-hidden="true"><i></i></span>
+              <span class="work-name">Обложка</span>
+              <span class="work-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+
+            <a class="work reveal" href="#top" draggable="false">
+              <span class="work-meta">06</span>
+              <span class="art art-type" aria-hidden="true">Аа</span>
+              <span class="work-name">Шрифт</span>
+              <span class="work-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Контакты ===== -->
+    <section class="section" id="contacts">
+      <div class="section-grid">
+        <h2 class="section-title reveal">Контакты</h2>
+        <div class="section-body">
+          <p class="lead reveal">Пишите — обсудим вашу карточку. Отвечаем в течение дня.</p>
+
+          <div class="contact-row reveal">
+            <a class="contact-mail" href="mailto:dakr2300@gmail.com">dakr2300@gmail.com</a>
+            <button class="copy-btn" type="button" data-copy="dakr2300@gmail.com">Скопировать</button>
+          </div>
+
+          <ul class="contact-links reveal">
+            <li><a href="https://t.me/whyshvprojects" target="_blank" rel="noopener">Telegram&nbsp;&#8599;</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year">2026</span> WP — студия дизайна</p>
+    <p>Сделано без конструкторов: HTML, CSS и JavaScript</p>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite">Скопировано</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
